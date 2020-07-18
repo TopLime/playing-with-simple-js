@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Easy - Quizical!</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+     </br>
+        <h1>Question</h1>
+        <h3>Do 5 Star Jumps</h3>
+        <br>
+
+        <div class="wrapper">  
+ <div class="wrapper">  
+        <button onclick="incorrect()">Nope</button>
+    </div>
+    </div>       
+    <br>
+    <div class="wrapper">  
+        <button onclick="correct()">Done</button>
+    </div>
+    <br>
+
+    </body>
+
+<script type="text/javascript">
+    var websitess = ["incorrect.html"];
+
+function incorrect() {
+    var website = websitess[Math.floor(Math.random()*websitess.length)];
+    window.location = website;
+}
+</script>
+<script type="text/javascript">
+    var websites = ["correct.html"];
+
+function correct() {
+    var website = websites[Math.floor(Math.random()*websites.length)];
+    window.location = website;
+}
+</script>
+
+
+
+
+
+</html>

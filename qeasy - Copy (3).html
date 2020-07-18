@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Easy - Quizical!</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+     </br>
+        <h1>Question</h1>
+        <h3>Complete this sentence: If ____ still complaining, ____ must be no limit to ____ arrogance!</h3>
+        <br>
+
+        <div class="wrapper">  
+ <div class="wrapper">  
+        <button onclick="incorrect()">If there still complaining, they're must be no limit to their arrogance!</button>
+    </div>
+    </div>       
+    <br>
+    <div class="wrapper">  
+        <button onclick="incorrect()">If they’re still complaining, their must be no limit to there arrogance!</button>
+    </div>
+    <br>
+            <div class="wrapper">  
+<button onclick="correct()">If they’re still complaining, there must be no limit to their arrogance!</button>
+                    </div>
+    </body>
+
+<script type="text/javascript">
+    var websitess = ["incorrect.html"];
+
+function incorrect() {
+    var website = websitess[Math.floor(Math.random()*websitess.length)];
+    window.location = website;
+}
+</script>
+<script type="text/javascript">
+    var websites = ["correct.html"];
+
+function correct() {
+    var website = websites[Math.floor(Math.random()*websites.length)];
+    window.location = website;
+}
+</script>
+
+
+
+
+
+</html>

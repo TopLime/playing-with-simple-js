@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Easy - Quizical!</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+     </br>
+        <h1>Quizical!</h1>
+        <h3>Press the button below to choose a random question from a random catagory</h3>
+        <br>
+
+        <div class="wrapper">  
+<button type="button" onclick="randomWebsite();">Take me to a random Question</button>
+    </div>
+    </body>
+<script type="text/javascript">
+    var websites = ["qeasy.html", "qeasy - Copy(1).html", "qeasy - Copy(2).html","qeasy - Copy (3).html", "qeasy - Copy (4).html", "qeasy - Copy (5).html","qeasy - Copy (6).html", "qeasy - Copy (7).html", "qeasy - Copy (8).html","qeasy - Copy (9).html", "qeasy - Copy (10).html", "qeasy - Copy (11).html","qeasy - Copy (12).html", "qeasy - Copy (13).html", "qeasy - Copy (14).html","qeasy - Copy (15).html", "qeasy - Copy (16).html", "qeasy - Copy (17).html","qeasy - Copy (18).html", "qeasy - Copy (19).html", "qeasy - Copy (20).html",];
+
+function randomWebsite() {
+    var website = websites[Math.floor(Math.random()*websites.length)];
+    window.location = website;
+}
+</script>
+
+
+
+
+
+
+</html>

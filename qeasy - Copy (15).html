@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Easy - Quizical!</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+     </br>
+        <h1>Question</h1>
+        <h3>Complete this sentence: ____ ____ in the library with ____ dictionaries.</h3>
+        <br>
+
+        <div class="wrapper">  
+ <div class="wrapper">  
+        <button onclick="incorrect()">There there in the library with they're dictionaries.</button>
+    </div>
+    </div>       
+    <br>
+    <div class="wrapper">  
+        <button onclick="incorrect()">They’re their in the library with there dictionaries.</button>
+    </div>
+    <br>
+            <div class="wrapper">  
+<button onclick="correct()">They’re there in the library with their dictionaries.</button>
+                    </div>
+    </body>
+
+<script type="text/javascript">
+    var websitess = ["incorrect.html"];
+
+function incorrect() {
+    var website = websitess[Math.floor(Math.random()*websitess.length)];
+    window.location = website;
+}
+</script>
+<script type="text/javascript">
+    var websites = ["correct.html"];
+
+function correct() {
+    var website = websites[Math.floor(Math.random()*websites.length)];
+    window.location = website;
+}
+</script>
+
+
+
+
+
+</html>

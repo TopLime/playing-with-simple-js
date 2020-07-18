@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Easy - Quizical!</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+     </br>
+        <h1>Question</h1>
+        <h3>What, primarily, do giant pandas eat?</h3>
+        <br>
+
+        <div class="wrapper">  
+ <div class="wrapper">  
+        <button onclick="correct()">Bamboo</button>
+    </div>
+    </div>       
+    <br>
+    <div class="wrapper">  
+        <button onclick="incorrect()">Sugar Cane</button>
+    </div>
+    <br>
+            <div class="wrapper">  
+<button onclick="incorrect()">Reeds</button>
+                    </div>
+    </body>
+
+<script type="text/javascript">
+    var websites = ["incorrect.html];
+
+function incorrect() {
+    var website = websites[Math.floor(Math.random()*websites.length)];
+    window.location = website;
+}
+</script>
+<script type="text/javascript">
+    var websites = ["correct.html];
+
+function correct() {
+    var website = websites[Math.floor(Math.random()*websites.length)];
+    window.location = website;
+}
+</script>
+
+
+
+
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Home - Quizical!</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        </br>
+        <h1>Welcome to Quizical!</h1>
+        <h3>Click the button below to proceed to your challenge!</h3>
+ <br>
+
+        <div class="wrapper">  
+<button type="button" onclick="randomWebsite();">Go to your challenge!</button>
+    </div>
+    </body>
+<script type="text/javascript">
+    var websites = ["qstar.html",];
+
+function randomWebsite() {
+    var website = websites[Math.floor(Math.random()*websites.length)];
+    window.location = website;
+}
+</script>
+
+
+
+
+
+</html>
